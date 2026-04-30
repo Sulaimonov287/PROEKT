@@ -179,6 +179,12 @@
   .w-\[50px\] {
     width: 50px;
   }
+  .max-w-\[1\] {
+    max-width: 1;
+  }
+  .max-w-\[1600pc\] {
+    max-width: 1600pc;
+  }
   .max-w-\[1600px\] {
     max-width: 1600px;
   }
@@ -193,6 +199,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -225,8 +234,21 @@
   .border-\[red\] {
     border-color: red;
   }
+  .p-\[10px\] {
+    padding: 10px;
+  }
   .p-\[20px\] {
     padding: 20px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .font-\[500\] {
+    --tw-font-weight: 500;
+    font-weight: 500;
+  }
+  .text-\[\#424242\] {
+    color: #424242;
   }
   .underline {
     text-decoration-line: underline;
@@ -234,6 +256,13 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
   }
   .lg\:block {
     @media (width >= 64rem) {
@@ -271,6 +300,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -280,6 +313,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
