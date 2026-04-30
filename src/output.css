@@ -171,11 +171,56 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-25 {
+    margin-left: calc(var(--spacing) * 25);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
+  .ml-40 {
+    margin-left: calc(var(--spacing) * 40);
+  }
+  .ml-50 {
+    margin-left: calc(var(--spacing) * 50);
+  }
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[550px\] {
+    height: 550px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[370px\] {
+    width: 370px;
+  }
+  .w-\[400px\] {
+    width: 400px;
   }
   .max-w-\[1500px\] {
     max-width: 1500px;
@@ -186,14 +231,26 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-13 {
     gap: calc(var(--spacing) * 13);
@@ -217,18 +274,42 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#F8F8F8\] {
+    background-color: #F8F8F8;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .text-center {
+    text-align: center;
+  }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#55A630\] {
+    color: #55A630;
+  }
+  .text-\[\#424242\] {
+    color: #424242;
   }
   .underline {
     text-decoration-line: underline;
